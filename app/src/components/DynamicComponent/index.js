@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { push } from 'connected-react-router';
 import { Button } from 'antd';
 
 class DynamicComponent extends React.Component {
@@ -11,14 +12,15 @@ class DynamicComponent extends React.Component {
   render () {
     return <div id='simple_layout'>
       DynamicComponent
-      <Button>Search</Button>
+      <Button onClick={() => {
+        this.props.push('roster');
+      }}>Search</Button>
     </div>;
   }
 }
 
 DynamicComponent.propTypes = {
-  // eslint-disable-next-line react/no-unused-prop-types
-  something: PropTypes.object
+  push: PropTypes.func
 };
 
-export default connect()(DynamicComponent);
+export default connect(null, { push })(DynamicComponent);

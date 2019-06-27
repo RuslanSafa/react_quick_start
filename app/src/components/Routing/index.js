@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import Layout from '../Layout';
+import Roster from '../Roster';
 
 export const routes = [
   {
@@ -10,7 +11,7 @@ export const routes = [
   },
   {
     path: '/roster',
-    component: Layout
+    component: Roster
   },
   {
     path: '/schedule',
