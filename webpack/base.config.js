@@ -76,11 +76,6 @@ module.exports = () => merge([
               }
             }
           ]
-        },
-        {
-          test: /\.jsx?$/,
-          use: ['eslint-loader'],
-          exclude: /(node_modules)/
         }
       ]
     },

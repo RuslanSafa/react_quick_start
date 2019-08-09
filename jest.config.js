@@ -79,9 +79,10 @@ module.exports = {
 
   // A map from regular expressions to module names that allow to stub out resources with a single module
   moduleNameMapper: {
-    '^~src(.*)$': '<rootDir>/app/src$1',
-    '^~app(.*)$': '<rootDir>/app$1',
+    '^~app(.*)$': '<rootDir>/app/src$1',
+    '^~constants(.*)$': '<rootDir>/app/src/constants$1',
     '^~components(.*)$': '<rootDir>/app/src/components$1',
+    '^~utils(.*)$': '<rootDir>/app/src/utils$1',
     '^~stores(.*)$': '<rootDir>/app/src/stores$1',
     '^~mock(.*)$': '<rootDir>/mock-server/app/routes/mock$1',
     '^~test(.*)$': '<rootDir>/test$1',

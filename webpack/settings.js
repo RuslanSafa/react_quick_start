@@ -6,12 +6,13 @@ const rootDir = path.resolve(__dirname, '..');
 const cacheDir = path.resolve(__dirname, '..', 'node_modules', '.cache');
 const aliases = {
   '~': path.resolve(rootDir, 'src'),
-  '~app': path.resolve(rootDir, 'src', 'app'),
-  '~actions': path.resolve(rootDir, 'src', 'app', 'actions'),
-  '~components': path.resolve(rootDir, 'src', 'app', 'components'),
-  '~forms': path.resolve(rootDir, 'src', 'app', 'forms'),
-  '~reducers': path.resolve(rootDir, 'src', 'app', 'reducers'),
-  '~utils': path.resolve(rootDir, 'src', 'app', 'utils'),
+  '~app': path.resolve(rootDir, 'app', 'src'),
+  '~actions': path.resolve(rootDir, 'app', 'src', 'actions'),
+  '~constants': path.resolve(rootDir, 'app', 'src', 'constants'),
+  '~components': path.resolve(rootDir, 'app', 'src', 'components'),
+  '~forms': path.resolve(rootDir, 'app', 'src', 'forms'),
+  '~reducers': path.resolve(rootDir, 'app', 'src', 'reducers'),
+  '~utils': path.resolve(rootDir, 'app', 'src', 'utils'),
   '~const': path.resolve(rootDir, 'src', 'const'),
   '~mock': path.resolve(rootDir, 'mock-server', 'app', 'routes', 'mock'),
   '~test': path.resolve(rootDir, 'test')
